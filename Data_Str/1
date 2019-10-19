@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+#define size 10
+
+int main(void)
+{
+	int arr[size] = {7,9,3,10,18,12,30,16,35,70};
+	
+	int i,j,check;
+
+	for(i = 1; i<size; i++)
+	{
+		check = arr[i];
+		j = i - 1;
+		while(j >= 0 && arr[j] > check)
+		{
+		
+		
+		}
+	}
+
+	return 0;
+}
