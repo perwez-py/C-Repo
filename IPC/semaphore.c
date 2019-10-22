@@ -60,6 +60,7 @@ void* producer(void *arg)
 
 		sleep(1);//produnction decided here
 		stock_count++;
+		printf("\nProducer::\n");
 		printf("\nP::stock-count : %d\n",stock_count);
 		sem_post(&semP);
 		printf("\nP::post signal..\n");
@@ -79,6 +80,7 @@ for(i=0; i<10; i++)
 	}
 	sleep(2);//consumer rate decided here
 	stock_count--;
+	printf("\nConsumer::\n");
 	printf("C:: stock-count : %d\n",stock_count);
 	sem_post(&semC);
 	printf("\nC::post signal..\n");
